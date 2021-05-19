@@ -1,0 +1,57 @@
+//
+// Nav
+//
+
+
+// Nav wrapper (container)
+.nav{
+    &.board-tabs{
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        .nav-link {
+            background: #f7f7f7;
+            font-size: 17px;
+            padding: 1rem 1.75rem;
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #000;
+            flex: 1;
+            text-align:center;
+            white-space: nowrap;
+            @include media-breakpoint-down(sm) {
+                font-size: 13px;
+                padding: .5rem 0.75rem;
+            }
+            &.active{
+                background: #fff;
+                border: 1px solid black;
+                border-bottom: 0 solid #000;
+            }
+        }
+    }
+}
+// Nav wrapper
+.nav-wrapper {
+    padding: 1rem 0;
+    @include border-top-radius($card-border-radius);
+
+    + .card {
+        @include border-top-radius(0);
+        @include border-bottom-radius($card-border-radius);
+    }
+}
+
+
+// Nav links
+
+.nav-link {
+    color: $nav-link-color;
+
+    &:hover {
+        color: $nav-link-hover-color;
+    }
+
+    i.ni {
+        position: relative;
+        top: 2px;
+    }
+}

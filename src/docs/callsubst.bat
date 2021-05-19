@@ -1,0 +1,1 @@
+subst z: d:\eGovFrameDev-3.5.1-32bit

@@ -1,0 +1,121 @@
+﻿﻿@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&subset=korean');
+
+@import url('layout.css');
+@import url('main.css');
+@import url('sub.css');
+
+@import url('../etc.css');
+
+*{margin:0; padding:0;}
+ul, dl {list-style:none;}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin: 0; padding: 0; border: 0; outline: 0;}
+
+body { font:12px "Nanum Gothic" ,'나눔고딕', Helvetica, '돋움',dotum, sans-serif ;  color:#333; letter-spacing:-0.3px;}
+
+body {SCROLLBAR-FACE-COLOR: #DEDEDE;
+	SCROLLBAR-HIGHLIGHT-COLOR: #FFFFFF;
+	SCROLLBAR-SHADOW-COLOR: #C0C0C0;
+	SCROLLBAR-3DLIGHT-COLOR: #DEDEDE;
+	SCROLLBAR-ARROW-COLOR: #B5B3B3;
+	SCROLLBAR-TRACK-COLOR: #F0F0F0;
+	SCROLLBAR-DARKSHADOW-COLOR: #FFFFFF;
+	}
+
+a { color:inherit; color:#333; }
+a, a:link { text-decoration:none;}
+
+table  {margin:0; padding:0; border-collapse:collapse;} 
+
+input,textarea,select { font:12px '돋움',dotum, sans-serif ; color:#666; }
+select {border:1px solid #CFCFCF; height:28px; padding-left:3px; }
+
+/*margin*/
+.mL3 {margin-left:3px;}
+.mL5 {margin-left:8px;}
+.mL10 {margin-left:10px;}
+.mL15 {margin-left:15px;}
+.mL20 {margin-left:20px;}
+.mL40 {margin-left:40px;}
+
+.mR3 {margin-right:3px;}
+.mR5 {margin-right:5px;}
+.mR10 {margin-right:10px;}
+
+.mT3 {margin-top:3px;}
+.mT5 {margin-top:5px;}
+.mT7 {margin-top:7px;}
+.mT10 {margin-top:10px;}
+.mT15 {margin-top:15px;}
+.mT20 {margin-top:20px;}
+.mT30 {margin-top:30px;}
+.mT35 {margin-top:35px;}
+.mT40 {margin-top:40px;}
+.mT45 {margin-top:45px;}
+.mT50 {margin-top:50px;}
+.mT55 {margin-top:55px;}
+.mT60 {margin-top:60px;}
+.mT80 {margin-top:80px;}
+
+/*padding*/
+.p5 {padding : 5px;}
+.p10 {padding : 10px;}
+.p15 {padding : 15px;}
+
+/* width */
+.wd25 {width:25px;}
+.wd30 {width:30px;}
+.wd35 {width:35px;}
+.wd50 {width:50px;}
+.wd100 {width:100px;}
+
+.w25 {width:25%;}
+.w30 {width:30%;}
+.w35 {width:35%;}
+.w50 {width:50%;}
+.w60 {width:60%;}
+.w70 {width:70%;}
+.w80 {width:80%;}
+.w90 {width:90%;}
+.w100 {width:100%;}
+
+/*txt*/
+.he20 {line-height:20px;}
+.he22 {line-height:22px;}
+.f13 {font-size:13px;}
+.f14 {font-size:14px;}
+.f16 {font-size:16px;}
+.bold {font-weight:bold;}
+.red {color:#EB3B4B; }
+.blue {color:#153F8C; }
+.black {color:#000 }
+
+/* form */
+
+.input {line-height:26px; height:26px; border:1px solid #ccc; padding-left:5px;}
+.textarea {border:1px solid #ccc; padding:5px; line-height:18px; overflow-x:hidden;}
+.textarea2 {border:1px solid #ccc; padding:12px; line-height:18px; background:#f9f9f9; overflow-x:hidden;}
+.textarea3 {border:none; resize:none;}
+
+/* border */
+.borderT {border-top: 1px solid #ddd;}
+.borderB {border-bottom: 1px solid #ddd;}
+
+/* other */	
+.fleft { float:left; overflow:auto;}
+.fright { float:right; overflow:auto; }
+.aright {text-align:right;}
+.acen {text-align:center;}
+.acen * {vertical-align:middle;}

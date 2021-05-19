@@ -1,0 +1,47 @@
+﻿@charset "utf-8";
+
+/* main */
+#m_wrp {clear:both; margin-bottom:173px; padding:75px 0 70px 0; width:100%; text-align:center; background:#f2f2f2 url(/images/main_img.png) no-repeat 50% 200px;  overflow:hidden;}
+#m_wrp .m_txt2 {margin-top:20px; font-size:20px; color:#666; font-weight:bold;}
+#m_wrp .car_ban_wrp {margin-top:120px; height:text-align:center; overflow:hidden; }
+#m_wrp .car_ban {position:relative; display:inline-block; margin:0 15px; width:300px; height:396px; text-align:center;  background:rgba(255,255,255,0.93); overflow:hidden;
+				-webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+				 box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);}
+
+#m_wrp .car_ban .sb {margin-top:50px; font-size:30px; color:#111; font-weight:800;}
+#m_wrp .car_ban .ex {margin-top:15px; font-size:15px; color:#444;}
+#m_wrp .car_ban .ico_rerv {margin-top:54px; width:88px; height:87px; background-position:0 -44px;}
+#m_wrp .car_ban .ico_corm {margin-top:60px; width:89px; height:75px; background-position:-89px -44px;}
+#m_wrp .car_ban .ico_agy {margin-top:50px; width:65px; height:94px; background-position:-179px -44px;}
+#m_wrp .car_ban .btn_go {position:absolute; left:0; bottom:0; width:100%; height:75px; background:#e74c4c;}
+#m_wrp .car_ban .btn_go a {display:block; line-height:75px; color:#fff; font-size:20px;}
+#m_wrp .car_ban .btn_go a .btn_arr {margin-left:20px; width:55px; height:15px; background-position:-126px 0;}
+
+#m_wrp .car_ban:hover {background:#666;
+						 transition:0.4s all;
+						-webkit-transition:0.4s all;
+						-moz-transition:0.4s all;
+						-o-transition:0.4s all;
+						-ms-transition:0.4s all;}
+#m_wrp .car_ban:hover .sb {color:#fff;}
+#m_wrp .car_ban:hover .ex{color:#d2d2d2;}
+#m_wrp .car_ban:hover .ico_rerv {background-position:0 -139px;}
+#m_wrp .car_ban:hover .ico_corm {margin-top:60px; width:89px; height:75px; background-position:-89px -139px;}
+#m_wrp .car_ban:hover .ico_agy {margin-top:50px; width:65px; height:94px; background-position:-179px -139px;}
+
+.m_notice,
+.m_ban {display:inline-block; margin:0 15px; width:467px; height:235px; text-align:left; background:#fff; overflow:hidden;
+		-webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+				 box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);}
+
+.m_notice {position:relative;  padding:25px;}
+.m_notice .btn_more {position:absolute; right:0; top:0; width:40px; height:40px; background:#666;}
+.m_notice .btn_more a {display:block;; }
+.m_notice .btn_more a .ico {margin:11px 0 0 11px; width:17px; height:17px; vertical-align:middle; background-position:-364px -92px;}
+.m_notice .notice_sb {font-size:20px; font-weight:bold;  height:40px; color:#000; }
+.m_notice .notice {margin-top:15px;}
+.m_notice .notice li {margin-bottom:14px; font-size:15px; overflow:hidden;}
+.m_notice .notice li:last-child {margin-bottom:0;}
+.m_notice .notice li .date {float:left; width:100px; color:#888; font-size:13px;}
+.m_notice .notice li > a:hover {text-decoration:underline;}
+

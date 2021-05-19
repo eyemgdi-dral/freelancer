@@ -1,0 +1,1440 @@
+@charset "utf-8";
+
+
+/**
+ * sprite
+ * 작성자 : 최현원
+ */
+
+.sprite {
+    display: inline-block;
+    vertical-align: middle;
+    color: transparent;
+}
+.sprite a {
+    color: transparent;
+}
+
+.sprite_form {
+    background: url("/images/common/sprite_form.png") no-repeat 0 0;
+}
+
+.sprite_side_menu {
+    background: url("/images/common/sprite_side_menu.png") no-repeat 0 0;
+}
+
+.sprite_icon {
+    background: url("/images/common/sprite_icon.png") no-repeat 0 0;
+}
+
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+    .sprite_form {
+        background: url("/images/common/sprite_form@2x.png") no-repeat 0 0;
+        -webkit-background-size: 250px 250px;
+        background-size: 250px 250px;
+    }
+}
+/*sprite_header*/
+.sprite_header {
+    background: url("/images/common/sprite_header.png") no-repeat 0 0;
+}
+.sprite_header.sprite_tel {
+    background-position: 0 -50px;
+}
+.sprite_header.sprite_search {
+    background-position: -100px 0;
+}
+.sprite_header.sprite_search.active,
+.sprite_header.sprite_search:hover {
+    background-position: -150px 0;
+}
+
+.sprite_header.sprite_gnb_01 {
+    background-position: 0 -100px;
+    width: 93px;
+    height: 20px;
+}
+.gnb li.active .sprite_header.sprite_gnb_01,
+.sprite_header.sprite_gnb_01:hover {
+    background-position: -100px -100px;
+    width: 93px;
+    height: 20px;
+}
+
+.sprite_header.sprite_gnb_02 {
+    background-position: 0 -150px;
+    width: 75px;
+    height: 20px;
+}
+.gnb li.active .sprite_header.sprite_gnb_02,
+.sprite_header.sprite_gnb_02:hover {
+    background-position: -100px -150px;
+    width: 75px;
+    height: 20px;
+}
+.sprite_header.sprite_gnb_03 {
+    background-position: 0 -200px;
+    width: 77px;
+    height: 20px;
+}
+.gnb li.active .sprite_header.sprite_gnb_03,
+.sprite_header.sprite_gnb_03:hover {
+    background-position: -100px -200px;
+    width: 77px;
+    height: 20px;
+}
+.sprite_header.sprite_gnb_04 {
+    background-position: 0 -250px;
+    width: 88px;
+    height: 20px;
+}
+.gnb li.active .sprite_header.sprite_gnb_04,
+.sprite_header.sprite_gnb_04:hover {
+    background-position: -100px -250px;
+    width: 88px;
+    height: 20px;
+}
+.sprite_header.sprite_interest {
+    background-position: 0 -300px;
+    width: 79px;
+    height: 14px;
+}
+.interest a:hover .sprite_header.sprite_interest {
+    background-position: -100px -300px;
+    width: 79px;
+    height: 14px;
+}
+
+.sprite_header.sprite_allmenu {
+    background-position: -200px 0;
+    width: 17px;
+    height: 15px;
+}
+
+
+.sprite_header.sprite_home {
+    background-position: -250px 1px;
+    height: 13px;
+    padding-left:20px!important;
+}
+
+.sprite_header.sprite_home:before{
+    display: none;
+}
+
+
+/* sprite_form */
+.sprite_form.sprite_pop_close {
+    width: 23px;
+    height:21px;
+    background-position: -100px -200px;
+}
+
+
+/* sprite_side_menu */
+.sprite_side_menu.sprite_close {
+    background-position: -200px -400px;
+    width: 19px;
+    height: 20px;
+}
+
+.tabs.tabs-side-menu li {
+    padding-top: 15px;
+    height: 85px;
+    margin-right:0;
+}
+
+.tabs.tabs-side-menu li a {
+    margin:0 auto;
+    height:100%;
+}
+
+.tabs.tabs-side-menu .sprite_tab01 {
+    background-position: 0 0;
+}
+
+.tabs.tabs-side-menu .sprite_tab01:hover {
+    background-position: -300px 0;
+}
+
+.tabs.tabs-side-menu .sprite_tab01 {
+    width: 130px;
+    background-position: 0 0;
+}
+
+.tabs.tabs-side-menu .sprite_tab02 {
+    width:104px;
+    background-position: -150px 0;
+}
+
+.tabs.tabs-side-menu .sprite_tab02:hover {
+    background-position: -300px -100px;
+}
+
+.tabs.tabs-side-menu .active {
+    background: #fff;
+}
+
+.tabs.tabs-side-menu .active .sprite_tab01 {
+    background-position: 0 -100px;
+}
+
+.tabs.tabs-side-menu .active .sprite_tab02 {
+    background-position: -150px -100px;
+}
+
+.sprite_side_menu.sprite_xs {
+    width: 43px;
+    background-position: 0 -200px;
+}
+
+.sprite_side_menu.sprite_sm {
+    width: 51px;
+    background-position: 0 -250px;
+}
+
+.sprite_side_menu.sprite_md {
+    width: 54px;
+    background-position: 0 -300px;
+}
+
+.sprite_side_menu.sprite_lg {
+    width: 59px;
+    background-position: 0 -350px;
+}
+
+.sprite_side_menu.sprite_xl {
+    width: 58px;
+    background-position: 0 -400px;
+}
+
+.sprite_side_menu.sprite_sp {
+    width: 52px;
+    background-position: 0 -450px;
+}
+
+.sprite_side_menu.sprite_suv {
+    width: 52px;
+    background-position: 0 -500px;
+}
+
+.sprite_side_menu.sprite_rv {
+    width: 52px;
+    background-position: 0 -550px;
+}
+
+.sprite_side_menu.sprite_com {
+    width: 52px;
+    background-position: 0 -600px;
+}
+
+.sprite_side_menu.sprite_color01 {
+    background-position: -200px -200px;
+}
+
+.sprite_side_menu.sprite_color02 {
+    background-position: -250px -200px;
+}
+
+.sprite_side_menu.sprite_color03 {
+    background-position: -300px -200px;
+}
+
+.sprite_side_menu.sprite_color04 {
+    background-position: -350px -200px;
+}
+
+.sprite_side_menu.sprite_color05 {
+    background-position: -400px -200px;
+}
+
+.sprite_side_menu.sprite_color06 {
+    background-position: -450px -200px;
+}
+
+.sprite_side_menu.sprite_color07 {
+    background-position: -200px -250px;
+}
+
+.sprite_side_menu.sprite_color08 {
+    background-position: -250px -250px;
+}
+
+.sprite_side_menu.sprite_color09 {
+    background-position: -300px -250px;
+}
+
+.sprite_side_menu.sprite_color10 {
+    background-position: -350px -250px;
+}
+
+.sprite_side_menu.sprite_color11 {
+    background-position: -400px -250px;
+}
+
+.sprite_side_menu.sprite_color12 {
+    background-position: -450px -250px;
+}
+
+
+
+.active .sprite_side_menu.sprite_color01 {
+    background-position: -200px -300px;
+}
+
+.active .sprite_side_menu.sprite_color02 {
+    background-position: -250px -300px;
+}
+
+.active .sprite_side_menu.sprite_color03 {
+    background-position: -300px -300px;
+}
+
+.active .sprite_side_menu.sprite_color04 {
+    background-position: -350px -300px;
+}
+
+.active .sprite_side_menu.sprite_color05 {
+    background-position: -400px -300px;
+}
+
+.active .sprite_side_menu.sprite_color06 {
+    background-position: -450px -300px;
+}
+
+.active .sprite_side_menu.sprite_color07 {
+    background-position: -200px -350px;
+}
+
+.active .sprite_side_menu.sprite_color08 {
+    background-position: -250px -350px;
+}
+
+.active .sprite_side_menu.sprite_color09 {
+    background-position: -300px -350px;
+}
+
+.active .sprite_side_menu.sprite_color10 {
+    background-position: -350px -350px;
+}
+
+.active .sprite_side_menu.sprite_color11 {
+    background-position: -400px -350px;
+}
+
+.active .sprite_side_menu.sprite_color12 {
+    background-position: -450px -350px;
+}
+
+
+
+
+
+
+
+
+.sprite_side_menu.sprite_theme01 {
+    width: 23px;
+    height:36px;
+    background-position: -100px -200px;
+}
+
+.sprite_side_menu.sprite_theme02 {
+    width: 53px;
+    height:33px;
+    background-position: -100px -250px;
+}
+
+.sprite_side_menu.sprite_theme03 {
+    width: 52px;
+    height:33px;
+    background-position: -100px -300px;
+}
+
+.sprite_side_menu.sprite_theme04 {
+    width: 45px;
+    height:32px;
+    background-position: -100px -350px;
+}
+
+.sprite_side_menu.sprite_theme05 {
+    width: 38px;
+    height:33px;
+    background-position: -100px -400px;
+}
+
+.sprite_side_menu.sprite_theme06 {
+    width: 47px;
+    height:37px;
+    background-position: -100px -450px;
+}
+
+.sprite_side_menu.sprite_init {
+    width: 15px;
+    height: 19px;
+    background-position: -200px -450px;
+}
+
+.sprite_side_menu.sprite_collapse {
+    width:18px;
+    height: 19px;
+    background-position: -250px -450px;
+}
+
+.sprite_side_menu.sprite_more_close {
+    width:22px;
+    height: 22px;
+    background-position: -450px -400px;
+}
+
+.sprite_icon.sprite_qa {
+    width: 60px;
+    height: 60px;
+    background-position: -50px 0;
+}
+
+.sprite_icon.sprite_login {
+    width: 60px;
+    height: 60px;
+    background-position: -150px 0;
+}
+
+.sprite_icon.sprite_ask_success {
+    width: 60px;
+    height: 60px;
+    background-position: -300px 0;
+}
+
+.sprite_icon.sprite_wait_sell {
+    width: 60px;
+    height: 60px;
+    background-position: -400px 0;
+}
+
+
+.sprite_icon.sprite_end_sell {
+    width: 60px;
+    height: 60px;
+    background-position: 0 -100px;
+}
+
+.sprite_icon.sprite_stop_sell {
+    width: 60px;
+    height: 60px;
+    background-position: -100px -100px;
+}
+
+
+
+/*sprite_footer*/
+.sprite_footer {
+    background: url("/images/common/sprite_footer.png") no-repeat 0 0;
+}
+.sprite_footer.sprite_facebook {
+    background-position: 0 0;
+    width: 44px;
+    height: 44px;
+}
+.sprite_footer.sprite_blog {
+    background-position: -50px 0;
+    width: 44px;
+    height: 44px;
+}
+.sprite_footer.sprite_kakao {
+    background-position:  0 -50px ;
+    width: 210px;
+    height: 44px;
+}
+.sprite_footer.sprite_awarded01 {
+    background-position: 0 -100px ;
+    width: 63px;
+    height: 44px;
+}
+.sprite_footer.sprite_awarded02 {
+    background-position: -100px -100px ;
+    width: 28px;
+    height: 44px;
+}
+
+
+
+
+    /**
+     * button
+     * 작성자 : 김성규
+     */
+
+.btn-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.btn-group.btn-group-left {
+    text-align: left
+}
+
+.btn-group.btn-group-right {
+    text-align: right
+}
+
+.btn-group.btn-group-center {
+    text-align: center
+}
+
+.btn-group.btn-group-center .btn {
+    margin-right: 8px
+}
+
+.btn-group .btn-po-right {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.btn-group .btn-po-left {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    min-width: 107px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.5em;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent
+}
+
+.btn.btn-rounded {
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2px 2px #f2f2f2;
+    box-shadow: 0 2px 2px #f2f2f2;
+}
+
+.btn.btn-lg {
+    font-size: 16px;
+    height: 36px;
+    line-height: 24px
+}
+
+.btn.btn-md {
+    min-width: 80px;
+    /*height: 31px;*/
+    line-height: 22px;
+    padding: 4px 8px
+}
+
+.btn.btn-sm {
+    min-width: 50px;
+    height: 24px;
+    line-height: 18px;
+    font-size: 12px;
+    padding: 2px 8px
+}
+
+input[type="button"]:disabled,
+input[type="button"]:disabled:hover {
+    background: #eee;
+    color: #bfbfbf;
+    border-color: #eee;
+    cursor: default
+}
+
+.btn.btn-disabled,
+.btn.btn-disabled:hover {
+    background: #f8f8f8 !important;
+    color: #bfbfbf !important;
+    border-color: #e1e1e1 !important;
+    cursor: default !important
+}
+
+.btn.btn-orange {
+    background: #f56209;
+    border-color: #f56209;
+    color: #fff
+}
+
+.btn.btn-orange:hover {
+    background: #e55600;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
+}
+
+.btn.btn-white {
+    background: #fff;
+    border-color: #9e9d9e;
+    color: #000
+}
+
+.btn.btn-white:hover {
+    border-color: #9e9d9e;
+    color: #000;
+    -webkit-transition: background 0.5s, border-color 0.5s, color 0.5s;
+    -moz-transition: background 0.5s, border-color 0.5s, color 0.5s;
+    -o-transition: background 0.5s, border-color 0.5s, color 0.5s;
+    transition: background 0.5s, border-color 0.5s, color 0.5s;
+}
+
+.btn.btn-white-orange {
+    background: #fff;
+    border-color: #f56209;
+    color: #f56209
+}
+
+.btn.btn-white-orange:hover {
+    background: #fff;
+    border-color: #f56209;
+    color: #f56209;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
+}
+
+.btn.btn-white-blue {
+    background: #fff;
+    border-color: #0095ff;
+    color: #0095ff
+}
+
+.btn.btn-white-blue:hover {
+    background: #fff;
+    border-color: #0095ff;
+    color: #0095ff;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
+}
+
+.btn.btn-light-gray {
+    background: #f7f7f7;
+    border-color: #9e9d9e;
+    color: #000
+}
+
+.btn.btn-light-gray:hover {
+    background: #ececec;
+    border-color: #9e9d9e;
+    color: #000;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
+}
+
+.btn.btn-light-gray-orange {
+    background: #f7f7f7;
+    border-color: #f56209;
+    color: #f56209
+}
+
+.btn.btn-light-gray-orange:hover {
+    background: #ececec;
+    border-color: #f56209;
+    color: #f56209;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
+}
+
+.btn.btn-black {
+    background: #333;
+    border-color: #333;
+    color: #fff
+}
+
+.btn.btn-black:hover {
+    background: #222;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
+}
+
+.btn.btn-link, .btn.btn-link-sm {
+    padding-right: 20px
+}
+
+.btn.btn-link:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    width: 7px;
+    height: 10px;
+    background: url("/images/common/sprite_form.png") -200px 0 no-repeat;
+    margin-top: -5px
+}
+
+.btn.btn-link.btn-link-orange:after {
+    background-position: -200px -50px;
+}
+
+.btn.btn-link.btn-link-white:after {
+    background-position: -200px -150px;
+}
+
+.btn.btn-icon.btn-icon-left {
+    padding-left: 35px;
+}
+
+.btn.btn-icon.btn-icon-right {
+    padding-right: 25px;
+    left:0;
+    right:18px;
+}
+
+.btn.btn-icon:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 19px;
+    height: 19px;
+    background: url("/images/common/sprite_icon.png") 0 -200px no-repeat;
+    margin-top: -9px
+}
+
+.btn.btn-icon-white-print:after {
+    left: 14px;
+    background-position: 0 0;
+}
+
+.btn.btn-link.btn-link-only{
+    width:auto;
+    min-width:0;
+}
+
+.btn.btn-link.btn-link-only:hover {
+    text-decoration: underline;
+}
+
+.btn.btn-x {
+    min-width:0;
+    width: 28px;
+    height: 24px;
+}
+
+.btn.btn-x:after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    top:6px;
+    left:8px;
+    background: url("/images/common/sprite_form.png") 0 -200px no-repeat;
+}
+
+.btn.btn-x.btn-x-orange:after {
+    background-position: -50px -200px;
+}
+
+.btn.btn-up {
+    min-width:0;
+    width: 28px;
+    height: 24px;
+}
+
+.btn.btn-up:after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    top: 7px;
+    left: 8px;
+    background: url("/images/common/sprite_form.png") -150px -150px no-repeat;
+}
+
+.btn.btn-up.btn-up-orange:after {
+    background-position: -150px 0;
+}
+
+
+/**
+ * table
+ * 작성자 : 김성규
+ */
+
+h2 + table {
+    margin-top: -1px
+}
+
+.table {
+    border-top: #333 2px solid;
+    font-size: 14px;
+    margin-bottom: 10px;
+    table-layout: fixed;
+}
+
+.table.margin_top_up {
+    margin-top: -1px
+}
+
+.table.border_top {
+    border-top: #444 2px solid;
+}
+
+.table th {
+    height: 50px;
+    color: #333;
+    text-align: center;
+    padding: 6px 20px;
+    font-weight: normal;
+    border-bottom: #e8e8e8 1px solid;
+}
+
+.table td {
+    height: 50px;
+    border-bottom: #e8e8e8 1px solid;
+    text-align: center;
+    padding: 6px 12px
+}
+
+
+.table th.v_align_top,
+.table td.v_align_top {
+    vertical-align: top;
+    padding-top: 10px;
+}
+
+.table th .txt_row2_padding {
+    padding-left: 18px
+}
+
+.table.none_bd_left_right td {
+    border-left: 0;
+    border-right: 0;
+}
+
+.table.none_bd td {
+    border: 0
+}
+
+.table td.align-left {
+    text-align: left
+}
+
+.table td.align-right {
+    text-align: right
+}
+
+.table th.none_border_left,
+.table td.none_border_left {
+    border-left: 0!important;
+}
+
+.necessary {
+     position: relative;
+     padding-right: 12px;
+
+ }
+
+.necessary:after {
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    content: '';
+    width: 7px;
+    height: 7px;
+    background: url(/images/common/sprite_form.png) -150px -50px;
+
+}
+
+.necessary_left {
+    position: relative;
+    padding-left: 12px;
+    margin-right: 12px;
+
+}
+
+.necessary_left:before {
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    content: '';
+    width: 7px;
+    height: 7px;
+    background: url(/images/common/sprite_form.png) -150px -50px;
+
+}
+
+.label_txt_quantity {
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.table.table-vertical {
+    border-top: 0
+}
+
+.table.table-vertical th, .table.table-vertical td {
+    text-align: left;
+    height: 40px;
+}
+
+.table.table-vertical th {
+    background: #f9f9f9;
+    color: #333;
+    border: #e8e8e8 1px solid;
+    border-right: 0;
+}
+
+.table.table-vertical td {
+    border: #e8e8e8 1px solid;
+    border-left: 0;
+}
+
+.table.table-vertical.table-hover tr:hover th, .table.table-hover tr:hover td {
+    background: #fffcf0;
+}
+
+.table.table-vertical td.title {
+    text-align: left;
+    padding-left: 12px;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+.table.table-vertical tr.first th {
+    text-align: center
+}
+
+.table.table-vertical tr.first:hover th {
+    background: #f9f9f9
+}
+
+.table.table-vertical tr.first:hover td {
+    background: #fff
+}
+
+.table.table-vertical th.align-center {
+    text-align: center;
+}
+
+.table.table-long tr:nth-child(even) {
+    background: #fff7f2
+}
+
+.table td textarea {
+    width:100%;
+    height:140px;
+}
+
+.table tr.bd_bottom th, .table tr.bd_bottom td {
+    border-bottom: #d9d9d9 1px solid;
+}
+
+.bottom_terms {
+    padding: 6px 0 0 20px;
+    font-size: 12px;
+}
+
+.bottom_terms p {
+    padding-left: 22px;
+}
+
+.bottom_terms label {
+    margin-right:7px;
+}
+
+/**
+ * navigation
+ * 작성자 : 최현원
+ */
+
+.navigation {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.navigation span {
+    display: inline-block;
+}
+
+.navigation span.prev a {
+    display: inline-block;
+    width: 42px;
+    height: 39px;
+    border: 1px solid #c1c1c1;
+    color: transparent;
+    line-height: 39px;
+    font-size: 14px;
+    background: url("/images/common/img_navigation_prev.png") no-repeat center center;
+}
+
+.navigation span.prev a:hover {
+    display: inline-block;
+    width: 42px;
+    height: 39px;
+    border: 1px solid #c1c1c1;
+    color: transparent;
+    line-height: 39px;
+    font-size: 14px;
+    background: url("/images/common/img_navigation_prev_hover.png") no-repeat center center;
+}
+
+.navigation span.next a {
+     display: inline-block;
+     width: 42px;
+     height: 39px;
+     border: 1px solid #c1c1c1;
+     color: transparent;
+     line-height: 39px;
+     font-size: 14px;
+     background: url("/images/common/img_navigation_next.png") no-repeat center center;
+     margin-left: -1px;
+ }
+
+.navigation span.next a:hover {
+    display: inline-block;
+    width: 42px;
+    height: 39px;
+    border: 1px solid #c1c1c1;
+    color: transparent;
+    line-height: 39px;
+    font-size: 14px;
+    background: url("/images/common/img_navigation_next_hover.png") no-repeat center center;
+    margin-left: -1px;
+}
+
+.navigation span.number a {
+    display: inline-block;
+    width: 42px;
+    height: 39px;
+    border: 1px solid #c1c1c1;
+    text-align: center;
+    line-height: 39px;
+    margin-left: -1px;
+    font-size: 14px;
+    color: #858585;
+}
+
+.navigation span.number em {
+    display: inline-block;
+    width: 42px;
+    height: 39px;
+    border: 1px solid #c1c1c1;
+    text-align: center;
+    line-height: 39px;
+    margin-left: -1px;
+    font-size: 14px;
+    color: #f56209;
+    font-weight: bold;
+}
+
+.navigation.navigation_popup span.prev a,
+.navigation.navigation_popup span.next a {
+    width: 15px;
+}
+
+.navigation.navigation_popup span.number a,
+.navigation.navigation_popup span.number em {
+    width: auto;
+}
+
+.navigation.navigation_popup span.prev a,
+.navigation.navigation_popup span.next a,
+.navigation.navigation_popup span.number a,
+.navigation.navigation_popup span.number em {
+    padding: 0 5px;
+    height: 20px;
+    line-height: 20px;
+    border: none;
+    margin-left: 0;
+}
+
+/**
+ * tabs
+ * 작성자 : 최현원
+ */
+
+.tabs {
+    position: relative;
+    height: 42px;
+    margin-bottom: 30px;
+}
+
+.tabs li {
+    min-width: 128px;
+    float: left;
+    margin-right: -1px;
+    position: relative;
+    border: 1px solid #cdcdcd;
+}
+
+.tabs li a {
+    padding: 0 20px;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    color: #858585;
+    font-size: 16px;
+    display: block;
+}
+
+.tabs li:hover a {
+    color: #333;
+}
+
+.tabs li.active {
+    z-index: 50;
+    border-color: #f56209;
+}
+
+.tabs li.active a {
+    color: #f56209;
+}
+
+.tabs li.active a::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid #f56209;
+    border-left: 1px solid #f56209;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    margin-left: -5px;
+    background-color: #fff;
+}
+
+.tabs .btn-md {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -15px;
+}
+
+.tabs.tabs-lg {
+    width: 940px;
+    height: 59px;
+    padding:2px 0
+}
+
+.tabs.tabs-lg li {
+    min-width: 312px;
+    border: #dedede 1px solid;
+    margin-right:2px;
+}
+
+.tabs.tabs-lg li:last-child {
+    margin-right:0
+}
+
+.tabs.tabs-lg li a {
+    line-height: 49px;
+    height: 49px;
+}
+
+.tabs.tabs-lg li a:hover {
+    color: #333
+}
+
+.tabs.tabs-lg li.active {
+    background: #f56209
+}
+
+.tabs.tabs-lg li.active a::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid #f56209;
+    border-left: 1px solid #f56209;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    margin-left: -5px;
+    background-color: #f56209;
+}
+
+.tabs.tabs-orange li a {
+    color: #888;
+}
+
+.tabs.tabs-orange li.active a {
+    color: #fff;
+}
+
+
+/**
+ * tags
+ * 작성자 : 최현원
+ */
+
+.tags {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.tags span {
+    position: relative;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    text-align: center;
+    padding: 0 32px 0 10px;
+    background-color: #eeeeee;
+    color: #777777;
+}
+
+.tags span a {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    line-height: 1;
+    background: url("/images/common/ico_tag_close.png") no-repeat 0 0;
+    top: 50%;
+    right: 11px;
+    margin-top: -5px;
+    margin-right: -5px;
+    color: transparent;
+}
+
+.tags span.active {
+    background-color: #333333;
+    color: #eeeeee;
+}
+
+.tags span.active a {
+    color: #818181;
+    background: url("/images/common/ico_tag_close.png") no-repeat 0 0;
+
+}
+
+/**
+ * tooltip
+ * 작성자 : 최현원
+ */
+
+.tooltip {
+    position: relative;
+    padding: 8px 13px;
+    background-color: #f56209;
+    color: #ffffff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block;
+}
+
+.tooltip::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #f56209;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    margin-left: -5px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.tooltip.tooltip_bottom::after {
+    top: auto;
+    bottom: -5px;
+}
+
+
+
+/**
+ * bullet
+ * 작성자 : 최현원
+ */
+
+.bullet {
+    position: relative;
+    padding: 0 7px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #f4f4f4;
+    color: #4d4d4d;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.bullet.bullet_black {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+
+/**
+ * Headers
+ * 작성자 : 최현원
+ */
+
+/* 컨텐츠 그룹 타이틀 */
+h2.title {
+    font-size: 24px;
+    line-height: 1.5em;
+    color: #000;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+
+h3.title {
+    font-size: 24px;
+    line-height: 1.5em;
+    color: #000;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+
+h4.title {
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #000;
+    position: relative;
+}
+
+
+/**
+ * Text & Font
+ * 작성자 : 최현원
+ */
+
+.f_14 {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.f_hightlight_red {
+    color: #e82711 !important
+}
+
+.f_hightlight_orange {
+    color: #f6772a !important
+}
+
+.f_12 {
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+/* layout */
+.layout {
+    position: relative;
+    min-height: 20px;
+}
+
+/**
+ * layout
+ * 작성자 : 최현원
+ */
+
+.layout .layout_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.layout .layout_center {
+    text-align: center;
+}
+
+.layout .layout_right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/**
+ * layout height 설정
+ * 작성자 : 김성규
+ */
+
+.table td .layout {
+    margin-bottom: 20px;
+}
+
+.layout {
+    margin-bottom: 10px;
+}
+
+
+.layout.layout-lg {
+    height: 36px;
+}
+
+.layout.layout-lg .btn-lg {
+    top: 0
+}
+
+.layout.layout-lg .btn-sm {
+    top: 10px
+}
+
+.layout.layout-md {
+    height: 31px;
+}
+
+.layout.layout-sm {
+    height: 24px;
+}
+
+
+/* none */
+.none_margin_bottom {
+    margin-bottom: 0
+}
+.none_margin {
+    margin : 0
+}
+
+
+/* sticky*/
+.sticky-wrapper{
+    z-index:100;
+    position: relative;
+}

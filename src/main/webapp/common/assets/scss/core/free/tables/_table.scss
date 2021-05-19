@@ -1,0 +1,226 @@
+//
+// Table
+//
+
+
+// General styles
+
+.table {
+    thead th {
+        padding-top: $table-head-spacer-y;
+        padding-bottom: $table-head-spacer-y;
+        font-size: $table-head-font-size;
+        text-transform: $table-head-text-transform;
+        letter-spacing: $table-head-letter-spacing;
+        border-top: $table-border-width solid $table-head-border;
+        border-bottom: $table-border-width solid $table-head-border;
+        background: $table-head-bg;
+    }
+
+    th {
+        font-weight: $table-head-font-weight;
+    }
+
+    td {
+        border-bottom: $table-border-width solid #ccc;
+        .progress {
+            height: 3px;
+            width: 120px;
+            margin: 0;
+        }
+    }
+    
+    td,
+    th {
+        font-size: $table-body-font-size;
+        white-space: nowrap;
+    }
+
+
+    // Vetical align table content
+
+    &.align-items-center {
+        td,
+        th {
+            vertical-align: middle;
+        }
+    }
+
+
+   // Styles for dark table
+
+   .thead-dark {
+        th {
+            background-color: $table-dark-head-bg;
+            color: $table-dark-head-color;
+
+            a {
+                color: $table-dark-head-color;
+            }
+        }
+    }
+
+
+    // Styles for light table
+
+    .thead-light {
+        th {
+            background-color: $table-head-bg;
+            color: $table-head-color;
+
+            a {
+                color: $table-head-color;
+            }
+        }
+    }
+}
+
+
+// Add transition for hover state
+
+.table-hover {
+    tr {
+        @include transition($transition-base);
+    }
+}
+
+
+// Flush tables
+
+.table-flush {
+    td,
+    th {
+        border-left: 0;
+        border-right: 0;
+    }
+
+    tbody {
+        tr {
+            &:first-child {
+                td,
+                th {
+                    border-top: 0;
+                }
+            }
+
+            &:last-child {
+                td,
+                th {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+
+// Tables inside cards
+
+.card {
+    .table {
+        margin-bottom: 0;
+
+        td,
+        th {
+            padding-left: $card-spacer-x;
+            padding-right: $card-spacer-x;
+        }
+    }
+}
+
+
+// Fixes for custom elements inside tables
+
+.table {
+    .custom-toggle {
+        display: block;
+    }
+}
+
+.table-bordered{
+    border: 0;
+    thead{
+        th{
+            border-top: $table-border-width solid #777 !important;
+            border-bottom-color: #777 !important;
+            border-bottom: $table-border-width solid #777;
+        }
+    }
+    tr{
+        td,
+        th {
+            border: 0;
+            border-bottom: $table-border-width solid $table-border-color;
+            &:not(:last-child){
+                border-right: $table-border-width solid $table-border-color;
+            }
+        }
+
+    }
+}
+
+.table-form{
+    td,th{
+        border-color: #ccc;
+    }
+    tbody{
+        tr{
+            th:first-child{
+                border-right: 1px solid #ccc;
+            }
+        }
+    }
+    th{
+        text-align: center;
+        background: #f7f7f7;
+        vertical-align: middle;
+    }
+}
+
+
+@include media-breakpoint-down(sm) {
+    .responsive-table{
+        display: block;
+        thead{
+            display: none;
+        }
+        tbody{
+            display: block;
+            tr{
+                display: flex;
+                flex-wrap: wrap;
+                border-top: 1px solid #ccc;
+                td{
+                    border: 0;
+                    padding: 6px;
+                }
+                .board{
+                    &-content{
+                        flex: 0 0 calc(100% - 60px);
+                        max-width: calc(100% - 60px);
+                        padding-bottom: 0;
+                    }
+                    &-number{
+                        padding-bottom: 0;
+                    }
+                    &-writer,&-date{
+                        position: relative;
+                        margin-right: 10px;
+                        padding-right: 10px;
+                        &::after{
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            width: 1px;
+                            height: 10px;
+                            background: #777;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
