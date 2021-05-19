@@ -32,7 +32,7 @@
          -->
         
         <!-- 자바용 모델 생성 : 인터페이스 추가 안됨. extends 구문 변경 필요 -->
-		<javaModelGenerator targetPackage="com.tagosms.service.model" targetProject="tagoplusSms1" >
+		<javaModelGenerator targetPackage="com.tagosms.service.model" targetProject="tagoplusSms12" >
 			<property name="rootClass" value="com.tagoplus.model.GeneralModel"/>
 			<property name="enableSubPackages" value="false" />
 		</javaModelGenerator>
