@@ -28,7 +28,7 @@ buildSrc/build
 /integration-tests/build
 /src/asciidoc/build
 target/
-/src/main/webapp/WEB-INF/classes/
+src/main/webapp/WEB-INF/classes/
 
 # Eclipse artifacts, including WTP generated manifests
 .classpath
